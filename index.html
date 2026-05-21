@@ -1,0 +1,292 @@
+export default function CPALandingPage() {
+  const dynamicUsers = [
+    'James Carter',
+    'Emily Johnson',
+    'Daniel Smith',
+    'Michael Brown',
+    'Olivia Taylor',
+    'William Anderson',
+    'Sophia Miller',
+    'Ethan Wilson'
+  ];
+
+  const getRandomUser = () => {
+    return dynamicUsers[Math.floor(Math.random() * dynamicUsers.length)];
+  };
+
+  const getRandomReview = () => {
+    const reviewTexts = [
+      'Just completed my reward offer successfully from mobile.',
+      'The interface looks premium and loads very fast.',
+      'Easy steps and clean transparent design.',
+      'I liked the smooth mobile experience and modern UI.',
+      'Everything worked perfectly on my iPhone browser.',
+      'Very fast loading landing page with premium layout.'
+    ];
+
+    return reviewTexts[Math.floor(Math.random() * reviewTexts.length)];
+  };
+  const offers = [
+    {
+      title: 'CashApp $850',
+      link: 'https://www.af9m8trk.com/J6H116EG/5JY122KX/?s1=kilo',
+      badge: '$850 Reward',
+      logo: '💸'
+    },
+    {
+      title: 'Zelle $750',
+      link: 'https://www.af9m8trk.com/J6H116EG/8LP123XC/?s1=kio',
+      badge: '$750 Reward',
+      logo: '🏦'
+    },
+    {
+      title: 'Royal Cruise $100',
+      link: 'https://www.af9m8trk.com/J6H116EG/R98122L2/?s1=kio',
+      badge: 'Travel Bonus',
+      logo: '🚢'
+    },
+    {
+      title: 'Netflix $100',
+      link: 'https://www.af9m8trk.com/J6H116EG/KDQ122LY/?s1=kio',
+      badge: 'Entertainment',
+      logo: '🎬'
+    },
+    {
+      title: 'Family Dollar $500',
+      link: 'https://www.af9m8trk.com/J6H116EG/TTR12295/?s1=oppa',
+      badge: '$500 Gift Card',
+      logo: '🛍️'
+    },
+    {
+      title: 'Walmart $1,000',
+      link: 'https://www.af9m8trk.com/J6H116EG/T6M12294/?s1=Sus',
+      badge: '$1,000 Reward',
+      logo: '🛒'
+    },
+    {
+      title: 'American Eagle $100',
+      link: 'https://www.af9m8trk.com/J6H116EG/MJP12296/?s1=kkk',
+      badge: 'Fashion Reward',
+      logo: '👕'
+    },
+    {
+      title: 'RewardZinga CashApp $1,000',
+      link: 'https://www.af9m8trk.com/J6H116EG/9PC123FX/?s1=Moloy',
+      badge: '$1,000 Deposit',
+      logo: '💰'
+    },
+    {
+      title: 'Amazon $1,000',
+      link: 'https://www.af9m8trk.com/J6H116EG/TJ2123FW/?s1=Moloy',
+      badge: 'Amazon Bonus',
+      logo: '📦'
+    },
+    {
+      title: '$1000 Cash Deposit',
+      link: 'https://www.af9m8trk.com/J6H116EG/4K1123XK/?s1=Moloy',
+      badge: 'Instant Reward',
+      logo: '🏆'
+    },
+    {
+      title: 'CashApp $650',
+      link: 'https://www.af9m8trk.com/J6H116EG/3AF122KW/?s1=Moloy',
+      badge: '$650 Reward',
+      logo: '💵'
+    },
+    {
+      title: 'Target $750',
+      link: 'https://www.af9m8trk.com/J6H116EG/HMG123XJ/?s1=Moloy',
+      badge: 'Target Gift Card',
+      logo: '🎯'
+    }
+  ];
+
+  const reviews = [
+    {
+      name: 'James Carter',
+      review: 'I completed the CashApp reward offer on my phone and received confirmation much faster than expected. The design looks premium and everything worked smoothly.',
+      avatar: '👨‍💼',
+      tag: 'Verified USA User'
+    },
+    {
+      name: 'Emily Johnson',
+      review: 'The Walmart and Amazon offers were very easy to access from mobile. Clean layout and fast loading experience.',
+      avatar: '👩‍💻',
+      tag: 'Trusted Member'
+    },
+    {
+      name: 'Daniel Smith',
+      review: 'I liked the transparent review style and modern interface. The Netflix reward process was simple and responsive.',
+      avatar: '🧑‍💼',
+      tag: 'Real User Review'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#f8f5ef] text-gray-800 font-sans">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-70"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-24">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-3 bg-white shadow-lg rounded-full px-6 py-3 mb-8">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gray-200 to-white flex items-center justify-center text-white text-2xl font-bold">
+                R
+              </div>
+              <div className="text-left">
+                <h1 className="font-bold text-lg">RewardHub USA</h1>
+                <p className="text-sm text-gray-500">Exclusive CPA Reward Offers</p>
+              </div>
+            </div>
+
+            <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+              Claim Premium <span className="text-gray-900">USA Rewards</span>
+            </h2>
+
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600 mb-10 leading-relaxed">
+              Discover trending USA reward offers including CashApp, Walmart, Netflix,
+              Amazon, Target, and more. Mobile-friendly, secure, and easy to access.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="bg-white shadow-md rounded-2xl px-6 py-4">
+                <h3 className="font-bold text-2xl text-gray-900">12+</h3>
+                <p className="text-sm text-gray-500">Premium Offers</p>
+              </div>
+
+              <div className="bg-white shadow-md rounded-2xl px-6 py-4">
+                <h3 className="font-bold text-2xl text-gray-900">24/7</h3>
+                <p className="text-sm text-gray-500">Mobile Access</p>
+              </div>
+
+              <div className="bg-white shadow-md rounded-2xl px-6 py-4">
+                <h3 className="font-bold text-2xl text-gray-900">USA</h3>
+                <p className="text-sm text-gray-500">Exclusive Rewards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Offers Grid */}
+      <section className="max-w-7xl mx-auto px-6 py-16">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Featured Reward Offers</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Choose from high-converting CPA offers optimized for desktop and mobile traffic.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {offers.map((offer, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200"
+            >
+              <div className="p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-gray-200 to-white flex items-center justify-center text-3xl shadow-md">
+                    {offer.logo}
+                  </div>
+
+                  <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+                    {offer.badge}
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-bold mb-4 leading-snug">
+                  {offer.title}
+                </h3>
+
+                <p className="text-gray-600 mb-8 leading-relaxed">
+                  Complete the offer and unlock exciting USA rewards and bonus opportunities.
+                </p>
+
+                <a
+                  href={offer.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-gradient-to-r from-gray-900 to-gray-700 hover:from-black hover:to-gray-800 text-white font-bold py-4 rounded-2xl transition-all duration-300 shadow-lg hover:scale-105"
+                >
+                  Claim Now
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">User Reviews</h2>
+            <p className="text-gray-600">Transparent feedback from satisfied users.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {reviews.map((review, index) => (
+              <div
+                key={index}
+                className="bg-white/25 backdrop-blur-2xl rounded-3xl p-8 shadow-2xl border border-white/30 hover:bg-white/40 transition-all duration-500 relative overflow-hidden"
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-r from-gray-200 to-white flex items-center justify-center text-2xl text-white">
+                    {review.avatar}
+                  </div>
+
+                  <div>
+                    <h3 className="font-bold text-lg text-gray-900 animate-pulse tracking-wide">
+                      {getRandomUser()}
+                    </h3>
+                    <p className="text-sm text-gray-500 bg-white/50 backdrop-blur-md px-3 py-1 rounded-full inline-block border border-white/40">{review.tag}</p>
+                    <div className="flex text-yellow-500 text-lg">
+                      ★★★★★
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 leading-relaxed italic text-[15px]">
+                  “{getRandomReview()}”
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto bg-gradient-to-r from-gray-900 to-gray-700 rounded-[40px] text-white p-10 md:p-16 text-center shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+            Start Claiming Rewards Today
+          </h2>
+
+          <p className="text-lg md:text-xl mb-10 text-gray-100 leading-relaxed">
+            Access top USA CPA offers optimized for high conversions and smooth mobile performance.
+          </p>
+
+          <a
+            href="https://www.af9m8trk.com/J6H116EG/5JY122KX/?s1=kilo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-gray-900 hover:bg-gray-100 font-bold px-10 py-5 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            Get Started Now
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-gray-200 py-8">
+        <div className="max-w-7xl mx-auto px-6 text-center text-gray-500">
+          <p className="mb-2 font-semibold text-gray-700">RewardHub USA</p>
+          <p className="text-sm">
+            © 2026 All Rights Reserved. Optimized for mobile and desktop traffic.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
